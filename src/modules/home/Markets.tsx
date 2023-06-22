@@ -14,7 +14,7 @@ export default function Markets(){
         <h1 className='text-3xl font-bold mb-12'>Markets</h1>
         <div className="flex flex-col md:flex-row items-center justify-center mx-auto">
             {data.map((element, index) => (
-                <div className='mx-12'>
+                <div className='mx-12' key = {index}>
                     <img src = {element.source} className='w-max h-[50px] lg:h-[100px]'/>
                 </div>
             ))}
